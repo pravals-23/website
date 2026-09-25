@@ -16,9 +16,9 @@ export const eventConfig = {
     tagline: 'BIGGER. BOLDER. BETTER.',
   },
   event: {
-    dateLabel: '17TH & 18TH OCTOBER',
-    dateShort: '17–18 OCTOBER',
-    dateRange: '17–18',
+    dateLabel: '25TH & 26TH OCTOBER',
+    dateShort: '25–26 OCTOBER',
+    dateRange: '25–26',
     month: 'OCTOBER',
     days: 2,
     teams: 20,
