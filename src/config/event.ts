@@ -47,6 +47,9 @@ export const eventConfig = {
     // Change this single value to control when registration opens.
     opensAt: NEXT_SUNDAY,
     maxTeams: 20,
+    // Google Forms registration link.
+    formUrl:
+      'https://docs.google.com/forms/d/e/1FAIpQLSetBi8IOyQIvt6vMqmdc4Sr-MehBwsM48RDbYTcqsM7fXaaxA/viewform?usp=publish-editor',
   },
   social: {
     instagram: 'https://www.instagram.com/nexus_vittoria?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==',
