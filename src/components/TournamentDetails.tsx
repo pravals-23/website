@@ -3,7 +3,7 @@ import { eventConfig } from '@/config/event';
 import { Calendar, Users, MapPin, Shield } from 'lucide-react';
 
 const CARDS = [
-  { icon: Calendar, label: 'DATE', value: '17th & 18th October' },
+  { icon: Calendar, label: 'DATE', value: '24th & 25th October' },
   { icon: Users, label: 'TEAMS', value: '20 Teams' },
   { icon: MapPin, label: 'VENUE', value: 'Spark7 Sports Arena, Kattigenahalli' },
   { icon: Shield, label: 'CATEGORY', value: 'Under 21' },
