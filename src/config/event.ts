@@ -4,20 +4,10 @@
  */
 
 // ── Registration opening date ────────────────────────────────────────────
-// Configurable: set to the next upcoming Sunday at 00:00 local time.
-// Update this single value to change the countdown target.
-const NEXT_SUNDAY = (() => {
-  const now = new Date();
-  const daysUntilSunday = (7 - now.getDay()) % 7; // 0 if today is Sunday
-  const target = new Date(now);
-  target.setDate(now.getDate() + daysUntilSunday);
-  target.setHours(0, 0, 0, 0);
-  // If today IS Sunday and the time has already passed midnight, push to next week
-  if (daysUntilSunday === 0 && now.getHours() > 0) {
-    target.setDate(target.getDate() + 7);
-  }
-  return target.toISOString();
-})();
+// Registration is now OPEN. To set a future opening date, replace this
+// with an ISO string like '2026-09-28T00:00:00' and the countdown will
+// show a live timer until that moment.
+const REGISTRATION_OPEN_AT = new Date(0).toISOString(); // epoch = always open
 
 export const eventConfig = {
   brand: {
@@ -45,7 +35,7 @@ export const eventConfig = {
   },
   registration: {
     // Change this single value to control when registration opens.
-    opensAt: NEXT_SUNDAY,
+    opensAt: REGISTRATION_OPEN_AT,
     maxTeams: 20,
     // Google Forms registration link.
     formUrl:

@@ -44,7 +44,7 @@ export default function RegistrationCountdown() {
             </h2>
             <button
               onClick={() =>
-                document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' })
+                window.open(eventConfig.registration.formUrl, '_blank', 'noopener')
               }
               className="mt-6 rounded-full bg-gold px-10 py-4 text-sm font-bold tracking-wider text-black transition-all hover:bg-gold-bright hover:shadow-[0_0_30px_rgba(234,179,8,0.5)] hover:scale-105"
             >

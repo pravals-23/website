@@ -88,7 +88,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
-            onClick={() => scrollTo('#register')}
+            onClick={() => window.open(eventConfig.registration.formUrl, '_blank', 'noopener')}
             className="w-full sm:w-auto rounded-full bg-gold px-8 py-4 text-sm font-bold tracking-wider text-black transition-all hover:bg-gold-bright hover:shadow-[0_0_30px_rgba(234,179,8,0.5)] hover:scale-105"
           >
             REGISTER YOUR TEAM
