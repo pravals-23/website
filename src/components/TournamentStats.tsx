@@ -13,7 +13,7 @@ const STATS: Stat[] = [
   { value: 20, display: '20', label: 'TEAMS' },
   { value: 2, display: '2', label: 'DAYS' },
   { value: 1, display: '1', label: 'CHAMPION' },
-  { value: 17, display: '17–18', label: 'OCTOBER' },
+  { value: 17, display: '24–25', label: 'OCTOBER' },
 ];
 
 function AnimatedNumber({ value }: { value: number }) {
