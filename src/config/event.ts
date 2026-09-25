@@ -44,6 +44,11 @@ export const eventConfig = {
   social: {
     instagram: 'https://www.instagram.com/nexus_vittoria?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==',
   },
+  collaborator: {
+    name: 'VERTEX EVENTS',
+    logo: '/WhatsApp_Image_2026-09-25_at_9.44.31_PM.jpeg',
+    instagram: 'https://www.instagram.com/vertex_event_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==',
+  },
   venue: {
     // Google Maps search URL for the venue (no invented coordinates).
     directionsUrl:

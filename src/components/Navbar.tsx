@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Menu, X, Trophy } from 'lucide-react';
 import { eventConfig } from '@/config/event';
 
+const COLLAB_IMG = eventConfig.collaborator.logo;
+
 const NAV_LINKS = [
   { label: 'HOME', href: '#home' },
   { label: 'TOURNAMENT', href: '#tournament' },
@@ -37,12 +39,18 @@ export default function Navbar() {
         {/* Brand */}
         <button
           onClick={() => handleNav('#home')}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-2 sm:gap-3 group"
         >
-          <Trophy className="h-6 w-6 text-gold transition-transform group-hover:scale-110" />
-          <span className="font-display text-lg font-bold tracking-widest text-white">
+          <Trophy className="h-6 w-6 text-gold transition-transform group-hover:scale-110 shrink-0" />
+          <span className="font-display text-base sm:text-lg font-bold tracking-widest text-white">
             {eventConfig.brand.name}
           </span>
+          <span className="hidden sm:inline-block h-5 w-px bg-white/20" />
+          <img
+            src={COLLAB_IMG}
+            alt="Vertex Events — collaborator"
+            className="hidden sm:block h-8 w-auto rounded object-contain"
+          />
         </button>
 
         {/* Desktop nav */}

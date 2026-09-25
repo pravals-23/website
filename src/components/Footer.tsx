@@ -1,5 +1,5 @@
 import { eventConfig } from '@/config/event';
-import { Trophy, Instagram } from 'lucide-react';
+import { Trophy, Instagram, Users } from 'lucide-react';
 
 const LINKS = [
   { label: 'Home', href: '#home' },
@@ -66,6 +66,30 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+
+        {/* Collaborator */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <span className="text-xs font-bold tracking-[0.3em] text-white/50 flex items-center gap-2">
+            <Users className="h-4 w-4 text-gold/60" />
+            IN COLLABORATION WITH
+          </span>
+          <a
+            href={eventConfig.collaborator.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <img
+              src={eventConfig.collaborator.logo}
+              alt="Vertex Events"
+              className="h-10 w-auto rounded object-contain"
+            />
+            <span className="text-sm font-bold tracking-widest text-white/70 group-hover:text-gold transition-colors">
+              {eventConfig.collaborator.name}
+            </span>
+            <Instagram className="h-4 w-4 text-white/50 group-hover:text-gold transition-colors" />
+          </a>
+        </div>
 
         <p className="mt-8 text-center text-xs text-white/40 tracking-wider">
           © 2026 Nexus Vittoria. All rights reserved.
