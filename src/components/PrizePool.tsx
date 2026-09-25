@@ -1,5 +1,5 @@
 import { useInView } from '@/hooks/useInView';
-import { Lock, Trophy } from 'lucide-react';
+import { Trophy } from 'lucide-react';
 
 export default function PrizePool() {
   const [ref, inView] = useInView<HTMLDivElement>();
@@ -14,10 +14,10 @@ export default function PrizePool() {
           THE PRIZE POOL
         </p>
         <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-black text-white mb-8">
-          IT'S A <span className="text-gold">SURPRISE</span>
+          FIGHT FOR <span className="text-gold">GLORY</span>
         </h2>
 
-        {/* Locked prize visual */}
+        {/* Prize visual */}
         <div
           className={`relative mx-auto w-full max-w-md rounded-3xl border border-gold/30 bg-gradient-to-b from-gold/10 to-transparent p-10 transition-all duration-1000 ${
             inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
@@ -30,7 +30,7 @@ export default function PrizePool() {
 
           <div className="relative">
             <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border-2 border-gold/40 bg-black/40">
-              <Lock className="h-10 w-10 text-gold animate-pulse-slow" />
+              <Trophy className="h-10 w-10 text-gold" />
             </div>
             <div className="flex items-center justify-center gap-2 mb-2">
               <Trophy className="h-6 w-6 text-gold" />
@@ -38,14 +38,14 @@ export default function PrizePool() {
                 PRIZE POOL
               </p>
             </div>
-            <p className="text-sm font-bold tracking-[0.3em] text-gold">
-              REVEALED SOON
+            <p className="font-display text-5xl sm:text-6xl font-black text-gold tabular-nums">
+              ₹30,000
             </p>
           </div>
         </div>
 
         <p className="mt-8 text-base text-white/60">
-          The prize pool will be revealed soon.
+          Compete for a prize pool of ₹30,000. Prove your team is the best.
         </p>
       </div>
     </section>
